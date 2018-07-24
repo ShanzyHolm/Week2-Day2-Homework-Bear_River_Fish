@@ -20,7 +20,14 @@ class River
   end
 
   def remove_fish(fish)
-    @fish = fish.slice!(1)
+    index = @fish.index(fish)
+    @fish = fish.slice!(1, index)
   end
+
+#   1) Error:
+# RiverTest#test_remove_fish_from_river:
+# NoMethodError: undefined method `slice!' for #<Fish:0x007fb45185e0f0 @name="Wanda">
+#     /Users/user/codeclan_work/week_02/day_02/bear_river_fish_wk2_d2_hw/river.rb:23:in `remove_fish'
+#     specs/river_spec.rb:40:in `test_remove_fish_from_river'
 
 end
