@@ -9,9 +9,13 @@ class RiverTest < MiniTest::Test
 def setup()
 
 @river = River.new("Amazon")
-@bear1 = Bear.new ("Yogi", "grizzly")
+@bear1 = Bear.new("Yogi", "grizzly")
 @fish = Fish.new("Wanda")
 
+end
+
+def test_has_name()
+  assert_equal("Amazon", @river.name())
 end
 
 end
