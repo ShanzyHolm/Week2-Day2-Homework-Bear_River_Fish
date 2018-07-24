@@ -1,10 +1,14 @@
 class Bear
 
-def initialize(name, type)
+attr_reader :name, :type
 
-@name = name
-@type = type
+  def initialize(name, type)
 
-end
+    @name = name
+    @type = type
+
+  end
+
+
 
 end

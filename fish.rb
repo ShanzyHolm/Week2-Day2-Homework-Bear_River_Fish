@@ -1,9 +1,9 @@
 class Fish
 
-def initialize(name)
+  def initialize(name)
 
-@name = name
+    @name = name
 
-end
+  end
 
 end
