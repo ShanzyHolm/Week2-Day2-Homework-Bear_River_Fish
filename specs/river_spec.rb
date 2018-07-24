@@ -17,6 +17,7 @@ class RiverTest < MiniTest::Test
     @fish3 = Fish.new("Dory")
     @fish4 = Fish.new("Flounder")
     @fish5 = Fish.new("Mr Limpet")
+    @fish6 = Fish.new("Free Willy")
 
     # @fish_array = [@fish1, @fish2, @fish3, @fish4, @fish5]
 
@@ -26,13 +27,13 @@ class RiverTest < MiniTest::Test
     assert_equal("Amazon", @river.name())
   end
 
-  def test_add_fish_to_river()
-    @river.add_fish(@fish1)
-    assert_equal(1, @river.fish_count())
+  def test_fish_count()
+    assert_equal(5, @river.fish_count())
   end
 
-  def test_fish_count()
-    assert_equal(0, @river.fish_count())
+  def test_add_fish_to_river()
+    @river.add_fish(@fish6)
+    assert_equal(6, @river.fish_count())
   end
 
 end

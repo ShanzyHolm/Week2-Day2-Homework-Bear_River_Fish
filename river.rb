@@ -5,7 +5,7 @@ class River
   def initialize(name)
 
     @name = name
-    @fish = []
+    @fish = [@fish1, @fish2, @fish3, @fish4, @fish5]
 
     # @fish_array = [@fish1, @fish2, @fish3, @fish4, @fish5]
 
