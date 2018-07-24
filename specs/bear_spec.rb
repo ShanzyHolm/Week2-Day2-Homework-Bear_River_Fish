@@ -11,7 +11,7 @@ def setup()
 
 @bear1 = Bear.new ("Yogi", "grizzly")
 @river = River.new("Amazon")
-@fish = Fish.new()
+@fish = Fish.new("Wanda")
 
 end
 
