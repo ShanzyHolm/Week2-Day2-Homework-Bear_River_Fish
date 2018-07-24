@@ -31,4 +31,10 @@ class BearTest < MiniTest::Test
     assert_equal(0, @bear1.stomach().count())
   end
 
+  def test_take_fish_from_river()
+    
+  end
+
+
+
 end

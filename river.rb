@@ -19,4 +19,8 @@ class River
     @fish.push(new_fish)
   end
 
+  def remove_fish(fish)
+    @fish = fish.slice!(1)
+  end
+
 end

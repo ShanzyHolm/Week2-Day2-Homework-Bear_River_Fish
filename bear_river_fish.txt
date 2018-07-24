@@ -4,15 +4,15 @@ We are going to build a small ecosystem! We want to create an ecosystem made up 
 
 How Our Ecosystem Works
 
-A river should have a name e.g. "Amazon"
+A river should have a name e.g. "Amazon" x
 
-A river should hold many fish
+A river should hold many fish x
 
-A fish should have a name
+A fish should have a name x
 
-A bear should have a name e.g. "Yogi" and a type e.g. "Grizzly"
+A bear should have a name e.g. "Yogi" and a type e.g. "Grizzly" x
 
-A bear should have an empty stomach ( maybe an array )
+A bear should have an empty stomach ( maybe an array ) x
 
 A bear should be able to take a fish from the river
 

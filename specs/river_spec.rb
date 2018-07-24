@@ -19,7 +19,7 @@ class RiverTest < MiniTest::Test
     @fish5 = Fish.new("Mr Limpet")
     @fish6 = Fish.new("Free Willy")
 
-    # @fish_array = [@fish1, @fish2, @fish3, @fish4, @fish5]
+    @fish = [@fish1, @fish2, @fish3, @fish4, @fish5]
 
   end
 
@@ -34,6 +34,11 @@ class RiverTest < MiniTest::Test
   def test_add_fish_to_river()
     @river.add_fish(@fish6)
     assert_equal(6, @river.fish_count())
+  end
+
+  def test_remove_fish_from_river()
+    @river.remove_fish(@fish1)
+    assert_equal(4, @river.fish_count())
   end
 
 end
