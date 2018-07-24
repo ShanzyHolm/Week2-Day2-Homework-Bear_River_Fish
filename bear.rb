@@ -1,6 +1,9 @@
 class Bear
 
-def initialize()
+def initialize(name, type)
+
+@name = name
+@type = type
 
 end
 
