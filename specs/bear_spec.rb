@@ -10,12 +10,14 @@ class BearTest < MiniTest::Test
 
     @bear1 = Bear.new("Yogi", "grizzly")
 
-    @river = River.new("Amazon")
     @fish1 = Fish.new("Wanda")
     @fish2 = Fish.new("Nemo")
     @fish3 = Fish.new("Dory")
     @fish4 = Fish.new("Flounder")
     @fish5 = Fish.new("Mr Limpet")
+    @fish = [@fish1, @fish2, @fish3, @fish4, @fish5]
+
+    @river = River.new("Amazon", [@fish])
 
   end
 
@@ -27,18 +29,18 @@ class BearTest < MiniTest::Test
     assert_equal("grizzly", @bear1.type())
   end
 
-  def test_bears_stomach_empty()
-    assert_equal(0, @bear1.stomach().count())
+  def test_bears_stomach_starts_empty()
+    assert_equal(0, @bear1.food_count())
   end
 
-  def test_food_count()
-    @bear1.stomach()
-    assert_equal(0, @bear1.stomach().count())
-  end
+  # def test_food_count()
+  #   @bear1.stomach()
+  #   assert_equal(0, @bear1.stomach().count())
+  # end
 
   def test_take_fish_from_river()
-    @bear1.take_fish(@fish4)
-    @river.remove_fish(@fish4)
+    @bear1.take_fish(@river)
+    # @river.supply_fish()
     assert_equal(1, @bear.food_count())
     assert_equal(4, @river.fish_count())
   end

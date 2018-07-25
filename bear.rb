@@ -14,9 +14,15 @@ class Bear
     return @stomach.count()
   end
 
-  def take_fish(food_fish)
-    @stomach << food_fish
+  def take_fish(river)
+    eaten_fish = river.supply_fish()
+    @stomach.push(eaten_fish)
+    # @stomach.push(river.supply_fish())
   end
+
+  # def take_fish(food_fish)
+  #   @stomach << food_fish
+  # end
 
   def roar(sound)
     return sound
