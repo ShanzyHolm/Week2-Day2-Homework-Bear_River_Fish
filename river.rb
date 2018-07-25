@@ -1,6 +1,6 @@
 class River
 
-  attr_reader :name
+  attr_reader :name, :fish
 
   def initialize(name)
 
@@ -20,8 +20,9 @@ class River
   end
 
   def remove_fish(fish)
-    index = @fish.index(fish)
-    @fish = fish.slice!(1, index)
+    # index = @fish.index(fish)
+    @fish = fish.slice!([0])
+    # (1, index)
   end
   # git commit -m git commit -m "test remove fish from river code NOT WORKING with error
 
