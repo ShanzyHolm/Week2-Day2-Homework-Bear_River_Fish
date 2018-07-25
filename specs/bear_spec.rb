@@ -31,21 +31,22 @@ class BearTest < MiniTest::Test
     assert_equal(0, @bear1.stomach().count())
   end
 
-def test_food_count()
-@bear1.stomach(fish)
-assert_equal(1, @bear1.stomach().count)
-end
-
-  def test_take_fish_from_river()
-    @bear1.take_fish(fish)
-@bear.stomach(fish)
-@river
+  def test_food_count()
+    @bear1.stomach()
+    assert_equal(0, @bear1.stomach().count())
   end
 
-def test_roar()
-result = @bear1.roar("Roar!")
-assert_equal("Roar!", result)
-end
+  def test_take_fish_from_river()
+    @bear1.take_fish(@fish4)
+    @river.remove_fish(@fish4)
+    assert_equal(1, @bear.food_count())
+    assert_equal(4, @river.fish_count())
+  end
+
+  def test_roar()
+    result = @bear1.roar("Roar!")
+    assert_equal("Roar!", result)
+  end
 
 
 end

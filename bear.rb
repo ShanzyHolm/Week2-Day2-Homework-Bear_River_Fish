@@ -1,6 +1,6 @@
 class Bear
 
-attr_reader :name, :type, :stomach
+  attr_reader :name, :type, :stomach
 
   def initialize(name, type)
 
@@ -10,16 +10,16 @@ attr_reader :name, :type, :stomach
 
   end
 
-def food_count(food_fish)
-return @stomach.push(food_fish)
-end
+  def food_count()
+    return @stomach.count()
+  end
 
-def take_fish()
+  def take_fish(food_fish)
+    @stomach << food_fish
+  end
 
-end
-
-def roar(sound)
-return sound
-end
+  def roar(sound)
+    return sound
+  end
 
 end

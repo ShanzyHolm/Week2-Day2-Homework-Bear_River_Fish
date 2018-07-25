@@ -23,6 +23,7 @@ class River
     index = @fish.index(fish)
     @fish = fish.slice!(1, index)
   end
+  # git commit -m git commit -m "test remove fish from river code NOT WORKING with error
 
 #   1) Error:
 # RiverTest#test_remove_fish_from_river:
