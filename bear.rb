@@ -14,7 +14,7 @@ def food_count(food_fish)
 return @stomach.push(food_fish)
 end
 
-def take_fish_from_river()
+def take_fish()
 
 end
 

@@ -37,7 +37,9 @@ assert_equal(1, @bear1.stomach().count)
 end
 
   def test_take_fish_from_river()
-    
+    @bear1.take_fish(fish)
+@bear.stomach(fish)
+@river
   end
 
 def test_roar()
