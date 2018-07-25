@@ -32,6 +32,7 @@ class BearTest < MiniTest::Test
   end
 
 def test_food_count()
+@bear1.stomach(fish)
 assert_equal(1, @bear1.stomach().count)
 end
 

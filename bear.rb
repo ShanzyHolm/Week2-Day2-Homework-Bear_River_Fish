@@ -10,8 +10,8 @@ attr_reader :name, :type, :stomach
 
   end
 
-def food_count()
-
+def food_count(food_fish)
+return @stomach.push(food_fish)
 end
 
 def take_fish_from_river()
